@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'BookmarkCoreDLS_Example' do
+  pod 'BookmarkCoreDLS', :path => '../'
+
+  target 'BookmarkCoreDLS_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
