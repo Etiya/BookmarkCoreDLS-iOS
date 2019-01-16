@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'BookmarkCoreDLS'
-  s.version          = '0.0.2'
+  s.version          = '0.0.1'
   s.summary          = 'BookmarkCoreDLS is a private library for Etiya iOS team.'
   s.swift_version    = '4.2'
   s.requires_arc = true
@@ -17,11 +17,11 @@ Pod::Spec.new do |s|
 BookmarkCoreDLS is a library which contain all essential components for Bookmark Project.
                        DESC
 
-  s.homepage         = 'https://gitlab.com/etiyaios/coredls'
+  s.homepage         = 'https://gitlab.com/etiyaios/bookmarkcoredls'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'muratyilmaz' => 'muratylmz89@gmail.com' }
-  s.source           = { :git => 'https://gitlab.com/etiyaios/coredls.git', :tag => s.version.to_s }
+  s.source           = { :git => 'https://gitlab.com/etiyaios/bookmarkcoredls.git', :tag => s.version.to_s }
   s.social_media_url = 'https://twitter.com/Etiya_Tr'
 
   s.ios.deployment_target = '10.0'
