@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'BookmarkCoreDLS'
-  s.version          = '0.0.1'
+  s.version          = '0.0.2'
   s.summary          = 'BookmarkCoreDLS is a private library for Etiya iOS team.'
   s.swift_version    = '4.2'
   s.requires_arc = true
@@ -27,7 +27,7 @@ BookmarkCoreDLS is a library which contain all essential components for Bookmark
   s.ios.deployment_target = '10.0'
   s.platform = :ios, '10.0'
 
-  s.source_files = 'BookmarkCoreDLS/Classes'
+  s.source_files = 'BookmarkCoreDLS/Classes/**/*'
   
   s.resource_bundles = {
      'BookmarkCoreDLS' => ['BookmarkCoreDLS/Assets/*.ttf']
