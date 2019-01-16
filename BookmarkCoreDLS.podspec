@@ -27,7 +27,7 @@ BookmarkCoreDLS is a library which contain all essential components for Bookmark
   s.ios.deployment_target = '10.0'
   s.platform = :ios, '10.0'
 
-  s.source_files = 'BookmarkCoreDLS/Classes/**/*'
+  s.source_files = 'BookmarkCoreDLS/Classes'
   
   s.resource_bundles = {
      'BookmarkCoreDLS' => ['BookmarkCoreDLS/Assets/*.ttf']

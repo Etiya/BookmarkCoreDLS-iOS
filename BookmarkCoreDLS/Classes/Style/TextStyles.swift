@@ -7,9 +7,6 @@
 
 import Foundation
 
-public class Dummy {}
-public let kBundle = "BookmarkCoreDLS.bundle"
-
 public struct TextStyle {
     public let font: UIFont
     public let color: UIColor

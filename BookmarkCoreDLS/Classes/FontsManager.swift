@@ -7,6 +7,8 @@
 
 import Foundation
 
+public class Dummy {}
+
 public class FontsManager {
     
     public static let kBundle = "BookmarkCoreDLS.bundle"
