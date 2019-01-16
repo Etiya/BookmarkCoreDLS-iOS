@@ -8,35 +8,32 @@
 
 Pod::Spec.new do |s|
   s.name             = 'BookmarkCoreDLS'
-  s.version          = '0.1.0'
-  s.summary          = 'A short description of BookmarkCoreDLS.'
-
-# This description is used to generate tags and improve search results.
-#   * Think: What does it do? Why did you write it? What is the focus?
-#   * Try to keep it short, snappy and to the point.
-#   * Write the description between the DESC delimiters below.
-#   * Finally, don't worry about the indent, CocoaPods strips it!
+  s.version          = '0.0.1'
+  s.summary          = 'BookmarkCoreDLS is a private library for Etiya iOS team.'
+  s.swift_version    = '4.2'
+  s.requires_arc = true
 
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
+BookmarkCoreDLS is a library which contain all essential components for Bookmark Project.
                        DESC
 
-  s.homepage         = 'https://github.com/muratyilmaz/BookmarkCoreDLS'
+  s.homepage         = 'https://gitlab.com/etiyaios/coredls'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'muratyilmaz' => 'muratylmz89@gmail.com' }
-  s.source           = { :git => 'https://github.com/muratyilmaz/BookmarkCoreDLS.git', :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
+  s.source           = { :git => 'https://gitlab.com/etiyaios/coredls.git', :tag => s.version.to_s }
+  s.social_media_url = 'https://twitter.com/Etiya_Tr'
 
-  s.ios.deployment_target = '8.0'
+  s.ios.deployment_target = '10.0'
+  s.platform = :ios, '10.0'
 
   s.source_files = 'BookmarkCoreDLS/Classes/**/*'
   
-  # s.resource_bundles = {
-  #   'BookmarkCoreDLS' => ['BookmarkCoreDLS/Assets/*.png']
-  # }
+  s.resource_bundles = {
+     'BookmarkCoreDLS' => ['BookmarkCoreDLS/Assets/*.ttf']
+  }
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+  s.frameworks = 'UIKit'
+  s.dependency 'SnapKit'
 end

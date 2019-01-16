@@ -1,0 +1,6 @@
+framework module BookmarkCoreDLS {
+  umbrella header "BookmarkCoreDLS-umbrella.h"
+
+  export *
+  module * { export * }
+}

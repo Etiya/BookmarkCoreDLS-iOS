@@ -1,0 +1,35 @@
+{
+  "name": "BookmarkCoreDLS",
+  "version": "0.0.1",
+  "summary": "BookmarkCoreDLS is a private library for Etiya iOS team.",
+  "swift_version": "4.2",
+  "requires_arc": true,
+  "description": "BookmarkCoreDLS is a library which contain all essential components for Bookmark Project.",
+  "homepage": "https://github.com/muratyilmaz/BookmarkCoreDLS",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "muratyilmaz": "muratylmz89@gmail.com"
+  },
+  "source": {
+    "git": "https://github.com/muratyilmaz/BookmarkCoreDLS.git",
+    "tag": "0.0.1"
+  },
+  "platforms": {
+    "ios": "10.0"
+  },
+  "source_files": "BookmarkCoreDLS/Classes/**/*",
+  "resource_bundles": {
+    "BookmarkCoreDLS": [
+      "BookmarkCoreDLS/Assets/*.ttf"
+    ]
+  },
+  "frameworks": "UIKit",
+  "dependencies": {
+    "SnapKit": [
+
+    ]
+  }
+}

@@ -1,0 +1,6 @@
+framework module Pods_BookmarkCoreDLS_Example {
+  umbrella header "Pods-BookmarkCoreDLS_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}
