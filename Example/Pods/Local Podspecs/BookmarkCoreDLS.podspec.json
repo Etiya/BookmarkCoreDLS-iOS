@@ -1,11 +1,11 @@
 {
   "name": "BookmarkCoreDLS",
-  "version": "0.0.1",
+  "version": "0.0.3",
   "summary": "BookmarkCoreDLS is a private library for Etiya iOS team.",
   "swift_version": "4.2",
   "requires_arc": true,
   "description": "BookmarkCoreDLS is a library which contain all essential components for Bookmark Project.",
-  "homepage": "https://github.com/muratyilmaz/BookmarkCoreDLS",
+  "homepage": "https://gitlab.com/etiyaios/bookmarkcoredls",
   "license": {
     "type": "MIT",
     "file": "LICENSE"
@@ -14,16 +14,18 @@
     "muratyilmaz": "muratylmz89@gmail.com"
   },
   "source": {
-    "git": "https://github.com/muratyilmaz/BookmarkCoreDLS.git",
-    "tag": "0.0.1"
+    "git": "https://gitlab.com/etiyaios/bookmarkcoredls.git",
+    "tag": "0.0.3"
   },
+  "social_media_url": "https://twitter.com/Etiya_Tr",
   "platforms": {
     "ios": "10.0"
   },
   "source_files": "BookmarkCoreDLS/Classes/**/*",
   "resource_bundles": {
     "BookmarkCoreDLS": [
-      "BookmarkCoreDLS/Assets/*.ttf"
+      "BookmarkCoreDLS/Assets/Fonts/*.ttf",
+      "BookmarkCoreDLS/Assets/Images/*"
     ]
   },
   "frameworks": "UIKit",

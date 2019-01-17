@@ -7,11 +7,11 @@
 
 import UIKit
 import SnapKit
-import BookmarkCoreDLS
 
 public class FixedBottomPriceView: UIView {
     
     private lazy var seperator = UIView()
+    
     public lazy var titleLabel = ELabel()
     public lazy var subtitleLabel = ELabel()
     public lazy var priceLabel = ELabel()
@@ -63,7 +63,6 @@ public class FixedBottomPriceView: UIView {
         let horLabelSV = UIStackView(arrangedSubviews: [vertLabelSV, priceLabel])
         horLabelSV.axis = .horizontal
         mainSV.addArrangedSubview(horLabelSV)
-        
         mainSV.addArrangedSubview(ctaButton)
     }
 }

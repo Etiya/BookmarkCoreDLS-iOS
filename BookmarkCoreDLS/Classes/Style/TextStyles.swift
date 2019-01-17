@@ -8,8 +8,8 @@
 import Foundation
 
 public struct TextStyle {
-    public let font: UIFont
-    public let color: UIColor
+    public var font: UIFont
+    public var color: UIColor
 }
 
 // Predefined TextSyles

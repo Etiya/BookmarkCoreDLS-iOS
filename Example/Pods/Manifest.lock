@@ -1,5 +1,5 @@
 PODS:
-  - BookmarkCoreDLS (0.0.1):
+  - BookmarkCoreDLS (0.0.3):
     - SnapKit
   - SnapKit (4.2.0)
 
@@ -15,7 +15,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  BookmarkCoreDLS: 0f82d0c94e94cf46f94caa5d769e5ac8fd735479
+  BookmarkCoreDLS: 463e4dc156b21fbbef37361759d174089221c810
   SnapKit: fe8a619752f3f27075cc9a90244d75c6c3f27e2a
 
 PODFILE CHECKSUM: d7b4a184bd9f129e0a1ffb2b598ed084bbb36aad

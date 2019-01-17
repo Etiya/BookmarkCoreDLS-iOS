@@ -6,8 +6,6 @@
 //  Copyright © 2019 CocoaPods. All rights reserved.
 //
 
-import BookmarkCoreDLS
-
 public class ELabel: UILabel {
     public var textStyle: TextStyle? {
         didSet {

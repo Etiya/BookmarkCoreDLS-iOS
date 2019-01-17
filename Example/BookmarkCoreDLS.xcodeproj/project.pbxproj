@@ -15,10 +15,6 @@
 		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
-		F908195421EE1A6700DFF5F2 /* FixedBottomPriceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F908195321EE1A6700DFF5F2 /* FixedBottomPriceView.swift */; };
-		F908195621EE1E1D00DFF5F2 /* EButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F908195521EE1E1D00DFF5F2 /* EButton.swift */; };
-		F908195821EE20F200DFF5F2 /* ComponentFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = F908195721EE20F200DFF5F2 /* ComponentFactory.swift */; };
-		F908195A21EE24DF00DFF5F2 /* ELabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F908195921EE24DF00DFF5F2 /* ELabel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,10 +47,6 @@
 		945077132F4B78EFFB30F151 /* BookmarkCoreDLS.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = BookmarkCoreDLS.podspec; path = ../BookmarkCoreDLS.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		D40B06C5F1689DD4ED8AAC2C /* Pods-BookmarkCoreDLS_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BookmarkCoreDLS_Example.debug.xcconfig"; path = "Target Support Files/Pods-BookmarkCoreDLS_Example/Pods-BookmarkCoreDLS_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		EEC2515E81D9C9AF844E2C72 /* Pods_BookmarkCoreDLS_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BookmarkCoreDLS_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		F908195321EE1A6700DFF5F2 /* FixedBottomPriceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FixedBottomPriceView.swift; sourceTree = "<group>"; };
-		F908195521EE1E1D00DFF5F2 /* EButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EButton.swift; sourceTree = "<group>"; };
-		F908195721EE20F200DFF5F2 /* ComponentFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComponentFactory.swift; sourceTree = "<group>"; };
-		F908195921EE24DF00DFF5F2 /* ELabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ELabel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,10 +93,6 @@
 		607FACD21AFB9204008FA782 /* Example for BookmarkCoreDLS */ = {
 			isa = PBXGroup;
 			children = (
-				F908195721EE20F200DFF5F2 /* ComponentFactory.swift */,
-				F908195921EE24DF00DFF5F2 /* ELabel.swift */,
-				F908195521EE1E1D00DFF5F2 /* EButton.swift */,
-				F908195321EE1A6700DFF5F2 /* FixedBottomPriceView.swift */,
 				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
 				607FACD71AFB9204008FA782 /* ViewController.swift */,
 				607FACD91AFB9204008FA782 /* Main.storyboard */,
@@ -348,12 +336,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F908195621EE1E1D00DFF5F2 /* EButton.swift in Sources */,
-				F908195421EE1A6700DFF5F2 /* FixedBottomPriceView.swift in Sources */,
-				F908195A21EE24DF00DFF5F2 /* ELabel.swift in Sources */,
 				607FACD81AFB9204008FA782 /* ViewController.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
-				F908195821EE20F200DFF5F2 /* ComponentFactory.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

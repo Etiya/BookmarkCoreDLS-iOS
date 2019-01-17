@@ -15,7 +15,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let style = TextStyles.title1
+        /*let style = TextStyles.title1
         let label = UILabel()
         label.font = style.font
         label.textColor = style.color
@@ -33,7 +33,7 @@ class ViewController: UIViewController {
         
         stackView.snp.makeConstraints { make in
             make.center.equalToSuperview()
-        }
+        }*/
         
         // FixedBottomPriceView Example
         let bottomPriceView = FixedBottomPriceView(frame: .zero)
@@ -44,6 +44,31 @@ class ViewController: UIViewController {
         view.addSubview(bottomPriceView)
         bottomPriceView.snp.makeConstraints {
             $0.bottom.equalToSuperview()
+            $0.leading.trailing.equalToSuperview()
+        }
+        
+        bottomPriceView.ctaButton.tapHandler = {
+            print("Confirm tap...")
+        }
+        
+        // extra detail view
+        let extraDetailView = ExtraDetailView(frame: .zero)
+        extraDetailView.titleLabel.text = "Title"
+        extraDetailView.subtitleLabel.text = "Subtitle"
+        extraDetailView.extraDetailLabel.text = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque ullamcorper non velit et"
+        view.addSubview(extraDetailView)
+        extraDetailView.snp.makeConstraints {
+            $0.top.equalToSuperview().offset(Spacing.xlarge)
+            $0.leading.trailing.equalToSuperview()
+        }
+        
+        // note view
+        let noteView = NoteView(frame: .zero)
+        noteView.icon = #imageLiteral(resourceName: "note_icon")
+        noteView.label.text = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque ullamcorper non velit et."
+        view.addSubview(noteView)
+        noteView.snp.makeConstraints {
+            $0.top.equalTo(extraDetailView.snp.bottom)
             $0.leading.trailing.equalToSuperview()
         }
     }

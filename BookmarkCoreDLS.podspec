@@ -30,7 +30,7 @@ BookmarkCoreDLS is a library which contain all essential components for Bookmark
   s.source_files = 'BookmarkCoreDLS/Classes/**/*'
   
   s.resource_bundles = {
-     'BookmarkCoreDLS' => ['BookmarkCoreDLS/Assets/*.ttf']
+     'BookmarkCoreDLS' => ['BookmarkCoreDLS/Assets/Fonts/*.ttf', 'BookmarkCoreDLS/Assets/Images/*']
   }
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
