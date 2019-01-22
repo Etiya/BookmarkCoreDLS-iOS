@@ -10,10 +10,74 @@ import UIKit
 import BookmarkCoreDLS
 import SnapKit
 
+public class DataTableView: UITableView, UITableViewDataSource, UITableViewDelegate {
+    
+    var tableViewHeight: CGFloat {
+        layoutIfNeeded()
+        return contentSize.height
+    }
+    
+    public override init(frame: CGRect, style: UITableView.Style) {
+        super.init(frame: frame, style: style)
+        delegate = self
+        dataSource = self
+        
+        register(UITableViewCell.self, forCellReuseIdentifier: "cell")
+    }
+    
+    public required init?(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)
+    }
+    
+    public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 5
+    }
+    
+    public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
+        cell.textLabel?.text = "Hello \(indexPath.row)"
+        return cell
+    }
+}
+
+public class SelectableTableView: UITableView, UITableViewDataSource, UITableViewDelegate {
+    
+    var tableViewHeight: CGFloat {
+        layoutIfNeeded()
+        return contentSize.height
+    }
+    
+    public override init(frame: CGRect, style: UITableView.Style) {
+        super.init(frame: frame, style: style)
+        delegate = self
+        dataSource = self
+        
+        rowHeight = 80
+        register(SelectablePriceCell.self, forCellReuseIdentifier: "cell")
+    }
+    
+    public required init?(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)
+    }
+    
+    public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 5
+    }
+    
+    public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! SelectablePriceCell
+        cell.titleLabel.text = "HelloHe"
+        cell.priceLabel.text = "$3.00"
+        return cell
+    }
+}
+
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        view.backgroundColor = UIColor.white
         
         /*let style = TextStyles.title1
         let label = UILabel()
@@ -35,43 +99,107 @@ class ViewController: UIViewController {
             make.center.equalToSuperview()
         }*/
         
-        // FixedBottomPriceView Example
-        let bottomPriceView = FixedBottomPriceView(frame: .zero)
-        bottomPriceView.titleLabel.text = "My Add-Ons"
-        bottomPriceView.subtitleLabel.text = "One-time charge"
-        bottomPriceView.priceLabel.text = "$20.00"
-        bottomPriceView.buttonTitleText = "Confirm my order"
-        view.addSubview(bottomPriceView)
-        bottomPriceView.snp.makeConstraints {
-            $0.bottom.equalToSuperview()
-            $0.leading.trailing.equalToSuperview()
-        }
-        
-        bottomPriceView.ctaButton.tapHandler = {
-            print("Confirm tap...")
-        }
+//        // FixedBottomPriceView Example
+//        let bottomPriceView = FixedBottomPriceView(frame: .zero)
+//        bottomPriceView.titleLabel.text = "My Add-Ons"
+//        bottomPriceView.subtitleLabel.text = "One-time charge"
+//        bottomPriceView.priceLabel.text = "$20.00"
+//        bottomPriceView.buttonTitleText = "Confirm my order"
+//        view.addSubview(bottomPriceView)
+//        bottomPriceView.snp.makeConstraints {
+//            $0.bottom.equalToSuperview()
+//            $0.leading.trailing.equalToSuperview()
+//        }
+//
+//        bottomPriceView.ctaButton.tapHandler = {
+//            print("Confirm tap...")
+//        }
         
         // extra detail view
-        let extraDetailView = ExtraDetailView(frame: .zero)
-        extraDetailView.titleLabel.text = "Title"
-        extraDetailView.subtitleLabel.text = "Subtitle"
-        extraDetailView.extraDetailLabel.text = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque ullamcorper non velit et"
-        view.addSubview(extraDetailView)
-        extraDetailView.snp.makeConstraints {
-            $0.top.equalToSuperview().offset(Spacing.xlarge)
-            $0.leading.trailing.equalToSuperview()
+//        let extraDetailView = ExtraDetailView(frame: .zero)
+//        extraDetailView.titleLabel.text = "Turkey"
+//        extraDetailView.subtitleLabel.text = "Zone 3"
+//        extraDetailView.extraDetailLabel.text = "0,40 CAD / minute"
+//        view.addSubview(extraDetailView)
+//        extraDetailView.snp.makeConstraints {
+//            $0.top.equalToSuperview().offset(Spacing.xlarge)
+//            $0.leading.trailing.equalToSuperview()
+//            $0.height.equalTo(150)
+//        }
+        
+//        // note view
+//        let noteView = NoteView(frame: .zero)
+//        noteView.icon = #imageLiteral(resourceName: "note_icon")
+//        noteView.label.text = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque ullamcorper non velit et."
+//        view.addSubview(noteView)
+//        noteView.snp.makeConstraints {
+//            $0.top.equalTo(extraDetailView.snp.bottom)
+//            $0.leading.trailing.equalToSuperview()
+//        }
+        
+//        let aview = AccordionView(frame: .zero)
+//        aview.collapseWhenExpand = true
+//        view.addSubview(aview)
+//        aview.snp.makeConstraints { make in
+//            make.edges.equalToSuperview().inset(Spacing.small)
+//        }
+//
+//        let noteView = NoteView(frame: .zero)
+//        noteView.icon = #imageLiteral(resourceName: "note_icon")
+//        noteView.label.text = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque ullamcorper non velit et."
+//
+//        let bottomPriceView = FixedBottomPriceView(frame: .zero)
+//        bottomPriceView.titleLabel.text = "My Add-Ons"
+//        bottomPriceView.subtitleLabel.text = "One-time charge"
+//        bottomPriceView.priceLabel.text = "$20.00"
+//        bottomPriceView.buttonTitleText = "Confirm my order"
+//
+//        let extraDetailView = ExtraDetailView(frame: .zero)
+//        extraDetailView.titleLabel.text = "Turkey"
+//        extraDetailView.subtitleLabel.text = "Zone 3"
+//        extraDetailView.extraDetailLabel.text = "0,40 CAD / minute"
+//
+//        let dataTableView = DataTableView(frame: .zero, style: .plain)
+//        dataTableView.snp.makeConstraints { make in
+//            make.height.equalTo(dataTableView.tableViewHeight)
+//        }
+//
+//        aview.addRow(title: "Data", contentView: noteView)
+//        aview.addRow(title: "Call/Texts", contentView: bottomPriceView)
+//        aview.addRow(title: "International Calls", contentView: dataTableView)
+        
+//        let tableView = SelectableTableView(frame: .zero, style: .plain)
+//        view.addSubview(tableView)
+//        tableView.snp.makeConstraints {
+//            $0.edges.equalToSuperview()
+//        }
+        
+        let srv = SummaryRowView()
+        srv.titleLabel.text = "Subtotal"
+        srv.priceLabel.text = "$3.00"
+        view.addSubview(srv)
+        srv.snp.makeConstraints { make in
+            make.top.equalToSuperview().inset(Spacing.xlarge)
+            make.leading.trailing.equalToSuperview()
         }
         
-        // note view
-        let noteView = NoteView(frame: .zero)
-        noteView.icon = #imageLiteral(resourceName: "note_icon")
-        noteView.label.text = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque ullamcorper non velit et."
-        view.addSubview(noteView)
-        noteView.snp.makeConstraints {
-            $0.top.equalTo(extraDetailView.snp.bottom)
-            $0.leading.trailing.equalToSuperview()
+        let long = SummaryLongRowView()
+        long.titleLabel.text = "60 min Of calls"
+        long.subtitleLabel.text = "Valid until 03.02.2019"
+        long.priceLabel.text = "$3.00"
+        view.addSubview(long)
+        long.snp.makeConstraints { make in
+            make.top.equalTo(srv.snp.bottom)
+            make.leading.trailing.equalToSuperview()
+        }
+        
+        let textfield = ETextField()
+        textfield.placeholder = "Search country"
+        view.addSubview(textfield)
+        textfield.snp.makeConstraints { make in
+            make.top.equalTo(long.snp.bottom)
+            make.leading.trailing.equalToSuperview().inset(Spacing.small)
         }
     }
-
 }
 

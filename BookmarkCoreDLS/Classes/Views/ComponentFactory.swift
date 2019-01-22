@@ -24,4 +24,18 @@ public class ComponentFactory {
         return button
     }
     
+    public static func makeLabel(with style: TextStyle) -> ELabel {
+        let label = ELabel()
+        label.textStyle = style
+        return label
+    }
+    
+    public static func makeCheckbox() -> Checkbox {
+        let checkbox = Checkbox()
+        checkbox.borderStyle = .square
+        checkbox.checkmarkStyle = .tick
+        checkbox.checkboxBackgroundColor = Colors.fBlue
+        checkbox.checkmarkColor = UIColor.white
+        return checkbox
+    }
 }

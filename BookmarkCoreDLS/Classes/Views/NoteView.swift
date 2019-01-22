@@ -56,7 +56,7 @@ public class NoteView: UIView {
         iconView.contentMode = .scaleAspectFit
         iconView.setContentHuggingPriority(.required, for: .horizontal)
         
-        layoutMargins = UIEdgeInsets(top: Spacing.small, left: Spacing.small, bottom: Spacing.small, right: Spacing.small)
+        layoutMargins = UIEdgeInsets.zero
         mainSV.axis = .horizontal
         mainSV.spacing = Spacing.tiny
         mainSV.addArrangedSubview(label)
