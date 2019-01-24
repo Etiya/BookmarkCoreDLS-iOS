@@ -202,7 +202,7 @@ class ViewController: UIViewController {
 //            make.top.equalTo(long.snp.bottom)
 //            make.leading.trailing.equalToSuperview().inset(Spacing.small)
 //        }
-        
+        /*
         let amounts = [AmountItem(price: 10.0, currency: "$"),
                        AmountItem(price: 20.0, currency: "$"),
                        AmountItem(price: 30.0, currency: "$"),
@@ -266,6 +266,7 @@ class ViewController: UIViewController {
             $0.top.equalTo(largeSectionWithSubtitleView.snp.bottom)
         }
         pushRow.addTarget(self, action: #selector(handlePushRowTap), for: .touchUpInside)
+ */
     }
     
     @objc private func handlePushRowTap(){

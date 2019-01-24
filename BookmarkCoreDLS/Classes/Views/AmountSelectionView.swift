@@ -13,13 +13,13 @@ public struct AmountItem {
     public let currency: String
 }
 
-protocol AmountSelectionViewDelegate: class {
+public protocol AmountSelectionViewDelegate: class {
     func didSelect(at index: Int)
 }
 
 public class AmountSelectionView: UIScrollView {
     
-    weak var selectionDelegate: AmountSelectionViewDelegate?
+    public weak var selectionDelegate: AmountSelectionViewDelegate?
     private lazy var stackView = UIStackView()
     
     public var selectedIndex: Int?
