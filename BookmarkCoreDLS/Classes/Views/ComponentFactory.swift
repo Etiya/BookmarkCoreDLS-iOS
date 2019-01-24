@@ -10,6 +10,17 @@ import UIKit
 
 public class ComponentFactory {
     
+    public static func makeAmountButton() -> EButton {
+        let button = EButton(frame: .zero)
+        button.titleLabel?.font = TextStyles.large.font
+        button.setTitleColor(Colors.fGray, for: .normal)
+        button.setTitleColor(UIColor.white, for: .selected)
+        button.normalBackgroundColor = Colors.fLightGray
+        button.selectedBackgroundColor = Colors.fBlue
+        button.cornerRadius = 4
+        return button
+    }
+    
     // Build an action button
     public static func makeActionButton() -> EButton {
         let button = EButton(frame: .zero)

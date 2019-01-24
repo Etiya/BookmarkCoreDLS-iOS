@@ -15,6 +15,7 @@
 		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
+		F9791AD821F85C9E00B76F0F /* CreditCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9791AD121F85C9E00B76F0F /* CreditCardView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		945077132F4B78EFFB30F151 /* BookmarkCoreDLS.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = BookmarkCoreDLS.podspec; path = ../BookmarkCoreDLS.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		D40B06C5F1689DD4ED8AAC2C /* Pods-BookmarkCoreDLS_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BookmarkCoreDLS_Example.debug.xcconfig"; path = "Target Support Files/Pods-BookmarkCoreDLS_Example/Pods-BookmarkCoreDLS_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		EEC2515E81D9C9AF844E2C72 /* Pods_BookmarkCoreDLS_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BookmarkCoreDLS_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F9791AD121F85C9E00B76F0F /* CreditCardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreditCardView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +95,7 @@
 		607FACD21AFB9204008FA782 /* Example for BookmarkCoreDLS */ = {
 			isa = PBXGroup;
 			children = (
+				F9791AD121F85C9E00B76F0F /* CreditCardView.swift */,
 				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
 				607FACD71AFB9204008FA782 /* ViewController.swift */,
 				607FACD91AFB9204008FA782 /* Main.storyboard */,
@@ -339,6 +342,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				607FACD81AFB9204008FA782 /* ViewController.swift in Sources */,
+				F9791AD821F85C9E00B76F0F /* CreditCardView.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

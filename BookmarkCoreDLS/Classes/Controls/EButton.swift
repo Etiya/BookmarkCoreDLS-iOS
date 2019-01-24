@@ -55,6 +55,12 @@ public class EButton: UIButton {
         }
     }
     
+    @IBInspectable public var selectedBackgroundColor: UIColor = UIColor.clear {
+        didSet {
+            self.setBackgroundColor(color: selectedBackgroundColor, forUIControlState: .selected)
+        }
+    }
+    
     public var tapHandler: TapHandler? {
         didSet {
             self.removeTarget(self, action: #selector(tap), for: .touchUpInside)
@@ -73,13 +79,14 @@ public class EButton: UIButton {
         commonInit()
     }
     
-    public override var intrinsicContentSize: CGSize {
-        return CGSize(width: UIView.noIntrinsicMetric, height: 50)
-    }
-    
+//    public override var intrinsicContentSize: CGSize {
+//        return CGSize(width: UIView.noIntrinsicMetric, height: 50)
+//    }
+//    
     @objc private func tap() { self.tapHandler?() }
     
     private func commonInit() {
+        translatesAutoresizingMaskIntoConstraints = false
         clipsToBounds = true
     }
     
