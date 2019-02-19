@@ -150,11 +150,16 @@ class ViewController: UIViewController {
 //        noteView.icon = #imageLiteral(resourceName: "note_icon")
 //        noteView.label.text = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque ullamcorper non velit et."
 //
-//        let bottomPriceView = FixedBottomPriceView(frame: .zero)
-//        bottomPriceView.titleLabel.text = "My Add-Ons"
-//        bottomPriceView.subtitleLabel.text = "One-time charge"
-//        bottomPriceView.priceLabel.text = "$20.00"
-//        bottomPriceView.buttonTitleText = "Confirm my order"
+        let bottomPriceView = FixedBottomPriceView(frame: .zero)
+        bottomPriceView.titleLabel.text = "My Add-Ons"
+        bottomPriceView.subtitleLabel.text = "One-time charge"
+        bottomPriceView.priceLabel.text = "$20.00"
+        bottomPriceView.buttonTitleText = "Confirm my order"
+        view.addSubview(bottomPriceView)
+        bottomPriceView.snp.makeConstraints {
+            $0.bottom.leading.trailing.equalToSuperview()
+            
+        }
 //
 //        let extraDetailView = ExtraDetailView(frame: .zero)
 //        extraDetailView.titleLabel.text = "Turkey"
