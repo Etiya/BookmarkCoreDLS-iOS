@@ -49,7 +49,7 @@ public class ExtraDetailView: UIView {
         mainSV.snp.makeConstraints {
             $0.top.equalToSuperview()
             $0.leading.trailing.equalToSuperview()
-            $0.bottom.lessThanOrEqualTo(self)
+            $0.bottom.equalToSuperview()
         }
     }
 }

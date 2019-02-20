@@ -32,12 +32,12 @@ public class LargeSectionView: UIView {
     }
     
     private func initialize() {
-        layoutMargins = UIEdgeInsets(top: Spacing.small, left: Spacing.small, bottom: Spacing.small, right: Spacing.small)
+//        layoutMargins = UIEdgeInsets(top: Spacing.small, left: Spacing.small, bottom: Spacing.small, right: Spacing.small)
         self.addSubview(titleLabel)
         titleLabel.snp.makeConstraints({ (make) in
             make.centerY.equalToSuperview()
-            make.leading.equalTo(self.snp.leadingMargin)
-            make.trailing.equalTo(self.snp.trailingMargin)
+            make.leading.equalTo(self.snp.leading)
+            make.trailing.equalTo(self.snp.trailing)
         })
     }
     

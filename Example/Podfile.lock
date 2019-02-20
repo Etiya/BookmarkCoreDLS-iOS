@@ -1,13 +1,16 @@
 PODS:
-  - BookmarkCoreDLS (0.0.5):
+  - AloeStackView (1.0.1)
+  - BookmarkCoreDLS (0.0.6):
     - SnapKit
   - SnapKit (4.2.0)
 
 DEPENDENCIES:
+  - AloeStackView
   - BookmarkCoreDLS (from `../`)
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
+    - AloeStackView
     - SnapKit
 
 EXTERNAL SOURCES:
@@ -15,9 +18,10 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  BookmarkCoreDLS: e24d90698c0f9d7fbe6e62bdcabd0f8f92ec8d9a
+  AloeStackView: d22c006da4510db5e220968234174654b5ed6ea5
+  BookmarkCoreDLS: 9e9a1bc0ad6450e950dc68f4ebc3bcc5c8e48c91
   SnapKit: fe8a619752f3f27075cc9a90244d75c6c3f27e2a
 
-PODFILE CHECKSUM: d7b4a184bd9f129e0a1ffb2b598ed084bbb36aad
+PODFILE CHECKSUM: adbe82fb0fb5f5410798726357832ceff9adf095
 
 COCOAPODS: 1.6.0.beta.2

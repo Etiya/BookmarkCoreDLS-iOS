@@ -80,7 +80,7 @@ public class EButton: UIButton {
     }
     
     public override var intrinsicContentSize: CGSize {
-        return CGSize(width: UIView.noIntrinsicMetric, height: 50)
+        return CGSize(width: UIView.noIntrinsicMetric, height: 44)
     }
     
     @objc private func tap() { self.tapHandler?() }

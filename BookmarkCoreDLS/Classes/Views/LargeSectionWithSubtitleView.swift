@@ -51,7 +51,7 @@ public class LargeSectionWithSubtitleView: UIView {
     }
     
     private func initialize() {
-        layoutMargins = UIEdgeInsets(top: Spacing.small, left: Spacing.small, bottom: Spacing.small, right: Spacing.small)
+//        layoutMargins = UIEdgeInsets(top: Spacing.small, left: Spacing.small, bottom: Spacing.small, right: Spacing.small)
         subtitleLabel.numberOfLines = 0
         subtitleLabel.lineBreakMode = .byWordWrapping
         
@@ -61,13 +61,13 @@ public class LargeSectionWithSubtitleView: UIView {
         addSubview(iconView)
         
         labelSV.snp.makeConstraints {
-            $0.topMargin.bottomMargin.leadingMargin.equalToSuperview()
+            $0.top.bottom.leading.equalToSuperview()
             $0.trailing.lessThanOrEqualTo(iconView.snp.leading).offset(-Spacing.base)
         }
         
         iconView.snp.makeConstraints {
             $0.width.height.equalTo(20)
-            $0.trailing.equalTo(self.snp.trailingMargin)
+            $0.trailing.equalTo(self.snp.trailing)
             $0.centerY.equalToSuperview()
         }
     }

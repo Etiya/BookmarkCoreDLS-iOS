@@ -17,7 +17,21 @@ public class ComponentFactory {
         button.setTitleColor(UIColor.white, for: .selected)
         button.normalBackgroundColor = Colors.fLightGray
         button.selectedBackgroundColor = Colors.fBlue
-        button.cornerRadius = 4
+        return button
+    }
+    
+    // Build an line button
+    public static func makeLineActionButton() -> EButton {
+        let button = EButton(frame: .zero)
+        button.titleLabel?.font = TextStyles.large.font
+        button.setTitleColor(Colors.fBlack, for: .normal)
+        button.setTitleColor(Colors.fBlack, for: .selected)
+        button.setTitleColor(Colors.fBlack.withAlphaComponent(0.2), for: .highlighted)
+        button.normalBackgroundColor = UIColor.clear
+        button.selectedBackgroundColor = UIColor.clear
+        button.borderColor = Colors.fBlack
+        button.borderWidth = 1
+        button.borderColorHighlighted = Colors.fBlack.withAlphaComponent(0.2)
         return button
     }
     
