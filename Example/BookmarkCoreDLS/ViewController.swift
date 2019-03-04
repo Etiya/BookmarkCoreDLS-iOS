@@ -54,7 +54,13 @@ class ViewController: AloeStackViewController {
         extraDetailView.titleLabel.text = "Extra Detail View"
         extraDetailView.subtitleLabel.text = "Extra Subtitle Detail"
         extraDetailView.extraDetailLabel.text = "Description"
-        stackView.addRow(extraDetailView)
+//        stackView.addRow(extraDetailView)
+        
+        let d = EStepper(min: 0.5, max: 10.0, step: 0.1, valueType: "GB")
+        d.minusIconImage = UIImage(named: "icon_minus")
+        d.plusIconImage = UIImage(named: "icon_plus")
+        stackView.addRow(d)
+        
     }
 }
 
