@@ -22,8 +22,8 @@ public class CommRatesView: UIView {
         let label = UILabel()
         label.text = "Calls"
         label.textAlignment = .left
-        label.font = .robotoRegular14
-        label.textColor = .descriptionColor
+        label.font = TextStyles.small.font
+        label.textColor = TextStyles.small.color
         return label
     }()
     
@@ -31,16 +31,16 @@ public class CommRatesView: UIView {
         let label = UILabel()
         label.text = "Texts"
         label.textAlignment = .left
-        label.font = .robotoRegular14
-        label.textColor = .descriptionColor
+        label.font = TextStyles.small.font
+        label.textColor = TextStyles.small.color
         return label
     }()
     public var dataLabel: UILabel = {
         let label = UILabel()
         label.text = "Data"
         label.textAlignment = .left
-        label.font = .robotoRegular14
-        label.textColor = .descriptionColor
+        label.font = TextStyles.small.font
+        label.textColor = TextStyles.small.color
         return label
     }()
     
@@ -48,24 +48,24 @@ public class CommRatesView: UIView {
         let label = UILabel()
         label.text = "$0.10 / min"
         label.textAlignment = .right
-        label.font = .robotoRegular14
-        label.textColor = .titleColor
+        label.font = TextStyles.small.font
+        label.textColor = UIColor.black
         return label
     }()
     public var textRateLabel: UILabel = {
         let label = UILabel()
         label.text = "$0.05 / text"
         label.textAlignment = .right
-        label.font = .robotoRegular14
-        label.textColor = .titleColor
+        label.font = TextStyles.small.font
+        label.textColor = UIColor.black
         return label
     }()
     public var dataRateLabel: UILabel = {
         let label = UILabel()
         label.text = "N/A"
         label.textAlignment = .right
-        label.font = .robotoRegular14
-        label.textColor = .titleColor
+        label.font = TextStyles.small.font
+        label.textColor = UIColor.black
         return label
     }()
     
@@ -101,15 +101,10 @@ public class CommRatesView: UIView {
         }
         walletImageView.snp.makeConstraints { (make) in
             make.left.equalToSuperview()
-            //            make.width.equalTo(88)
-            //            make.height.equalTo(67)
             make.centerY.equalToSuperview()
         }
         
         ratesView.snp.makeConstraints { (make) in
-            //            make.centerX.equalToSuperview()
-            //            make.centerY.equalToSuperview()
-            //            make.height.equalTo(80)
             make.leading.equalTo(walletImageView.snp.trailing).offset(25)
             make.right.top.bottom.equalToSuperview()
             
