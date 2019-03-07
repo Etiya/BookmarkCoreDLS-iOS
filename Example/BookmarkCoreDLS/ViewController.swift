@@ -29,6 +29,7 @@ class ViewController: AloeStackViewController {
         
         /// INSTRUCTION VIEW
         let instructionView = InstructionView()
+        instructionView.thumbnailImage = UIImage(named: "smallspot-dispatcher")
         instructionView.titleLabel.text = "ThumbnailedView"
         instructionView.descriptionLabel.text = "DescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescr"
         stackView.addRow(instructionView)
@@ -56,11 +57,14 @@ class ViewController: AloeStackViewController {
         extraDetailView.extraDetailLabel.text = "Description"
 //        stackView.addRow(extraDetailView)
         
-        let d = EStepper(min: 0.5, max: 10.0, step: 0.1, valueType: "GB")
+        let d = EStepper(min: 0.5, max: 10.6, step: 0.4, valueType: "GB")
         d.minusIconImage = UIImage(named: "icon_minus")
         d.plusIconImage = UIImage(named: "icon_plus")
         stackView.addRow(d)
         
+        let buttonAction = ComponentFactory.makeActionButton()
+        buttonAction.setTitle("Hello", for: .normal)
+        stackView.addRow(buttonAction)
     }
 }
 

@@ -23,7 +23,7 @@ public class ComponentFactory {
     // Build an line button
     public static func makeLineActionButton() -> EButton {
         let button = EButton(frame: .zero)
-        button.titleLabel?.font = TextStyles.large.font
+        button.titleLabel?.font = TextStyles.regular_bold.font
         button.setTitleColor(Colors.fBlack, for: .normal)
         button.setTitleColor(Colors.fBlack, for: .selected)
         button.setTitleColor(Colors.fBlack.withAlphaComponent(0.2), for: .highlighted)
@@ -38,14 +38,13 @@ public class ComponentFactory {
     // Build an action button
     public static func makeActionButton() -> EButton {
         let button = EButton(frame: .zero)
-        button.titleLabel?.font = TextStyles.regular.font
+        button.titleLabel?.font = TextStyles.regular_bold.font
         button.setTitleColor(Colors.fBlack, for: .normal)
         button.setTitleColor(Colors.fBlack.withAlphaComponent(0.5), for: .highlighted)
         button.setTitleColor(Colors.fBlack.withAlphaComponent(0.3), for: .disabled)
         button.normalBackgroundColor = Colors.fGreen
         button.highlightedBackgroundColor = Colors.fGreen.withAlphaComponent(0.5)
         button.disabledBackgroundColor = Colors.fLightGray
-        button.cornerRadius = 8
         return button
     }
     

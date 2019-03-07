@@ -10,12 +10,12 @@ import UIKit
 
 public class EStepper: UIView {
     
-    var min: Double!
-    var max: Double!
-    var stepAmount: Double!
+    var min: Float!
+    var max: Float!
+    var stepAmount: Float!
     var valueType: String?
     
-    public var counterValue: Double = 0.5 {
+    public var counterValue: Float = 0.5 {
         didSet {
             updateLabel()
         }
@@ -35,6 +35,7 @@ public class EStepper: UIView {
     
     public lazy var decrementButton: UIButton = {
         let db = UIButton()
+        db.contentEdgeInsets = UIEdgeInsets(top: 16, left: 16, bottom: 16, right: 16)
         db.tintColor = Colors.fGreen
         db.addTarget(self, action: #selector(self.decrementTapped(_:)), for: .touchDown)
         return db
@@ -42,6 +43,7 @@ public class EStepper: UIView {
     
     public lazy var incrementButton: UIButton = {
         let ib = UIButton()
+        ib.contentEdgeInsets = UIEdgeInsets(top: 16, left: 16, bottom: 16, right: 16)
         ib.tintColor = Colors.fGreen
         ib.addTarget(self, action: #selector(self.incrementTapped(_:)), for: .touchDown)
         return ib
@@ -69,13 +71,13 @@ public class EStepper: UIView {
     
     var startDate: Date!
     
-    public init(min: Double, max: Double, step: Double, valueType: String? = nil) {
+    public init(min: Float, max: Float, step: Float, valueType: String? = nil) {
         super.init(frame: CGRect.zero)
-        setupUI()
         self.min = min
         self.max = max
         self.stepAmount = step
         self.valueType = valueType
+        setupUI()
     }
     
     override public init(frame: CGRect) {
@@ -90,25 +92,21 @@ public class EStepper: UIView {
     
     func setupUI() {
         
-        updateLabel()
-        
         decrementButton.setContentHuggingPriority(.required, for: .horizontal)
         incrementButton.setContentHuggingPriority(.required, for: .horizontal)
         
         addSubview(containerSV)
-        
         containerSV.snp.makeConstraints { (make) in
-            make.left.equalToSuperview().offset(16)
-            make.right.equalToSuperview().offset(-16)
+            make.left.equalToSuperview().offset(Spacing.small)
+            make.right.equalToSuperview().offset(-Spacing.small)
             make.bottom.top.equalToSuperview()
         }
         
+        updateLabel()
     }
     
     public func updateLabel() {
-        let newValue = round(10*self.counterValue)/10
-//        print(newValue)
-        let value = String(format: "%.1f", newValue)
+        let value = String(format: "%.1f", self.counterValue)
         counterLabel.text = "\(value) \(valueType ?? "")"
     }
     
@@ -124,16 +122,15 @@ public class EStepper: UIView {
     
     public func decrement() {
         if self.counterValue > self.min && decrementButton.state != .normal {
-            self.counterValue -= self.stepAmount
+            self.counterValue = Swift.max(self.min, self.counterValue - self.stepAmount)
             checkLongPress(operation: decrement)
         }
     }
     
     public func increment() {
         if self.counterValue < self.max && incrementButton.state != .normal {
-            self.counterValue += self.stepAmount
+            self.counterValue = Swift.min(self.max, self.counterValue + self.stepAmount)
             checkLongPress(operation: increment)
-            
         }
     }
     

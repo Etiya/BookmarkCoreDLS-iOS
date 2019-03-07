@@ -1,6 +1,6 @@
 {
   "name": "BookmarkCoreDLS",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "summary": "BookmarkCoreDLS is a private library for Etiya iOS team.",
   "swift_version": "4.2",
   "requires_arc": true,
@@ -15,7 +15,7 @@
   },
   "source": {
     "git": "https://gitlab.com/etiyaios/bookmarkcoredls.git",
-    "tag": "0.0.7"
+    "tag": "0.0.8"
   },
   "social_media_url": "https://twitter.com/Etiya_Tr",
   "platforms": {

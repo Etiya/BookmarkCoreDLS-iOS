@@ -13,10 +13,15 @@ public class InstructionView: UIView {
     private let labelContainer = UIStackView()
     private lazy var thumbnailView: UIImageView = {
         let view = UIImageView(image: nil)
-        view.backgroundColor = Colors.fDarkBlue
         view.contentMode = .scaleAspectFit
         return view
     }()
+    
+    public var thumbnailImage: UIImage? {
+        didSet {
+            self.thumbnailView.image = thumbnailImage
+        }
+    }
     
     public lazy var titleLabel = ComponentFactory.makeLabel(with: TextStyles.regular)
     public lazy var descriptionLabel = ComponentFactory.makeLabel(with: TextStyles.small)
@@ -32,8 +37,9 @@ public class InstructionView: UIView {
     }
     
     private func commonInit() {
-        backgroundColor = Colors.fLightGray
+        backgroundColor = UIColor.white
         
+        titleLabel.textStyle?.color = Colors.fDarkBlue
         descriptionLabel.numberOfLines = 0
         descriptionLabel.lineBreakMode = .byWordWrapping
         
@@ -45,7 +51,7 @@ public class InstructionView: UIView {
         
         titleLabel.setContentHuggingPriority(.required, for: .vertical)
         labelContainer.axis = .vertical
-        labelContainer.spacing = Spacing.tiny
+        //labelContainer.spacing = Spacing.tiny
         labelContainer.addArrangedSubview(titleLabel)
         labelContainer.addArrangedSubview(descriptionLabel)
         addSubview(labelContainer)

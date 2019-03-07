@@ -25,6 +25,8 @@ public enum TextStyles {
     public static let large = TextStyle(font: FontsManager.fontFor(name: "Roboto-Regular", size: 19), color: Colors.fGray)
     /// Roboto-Regular - 17
     public static let regular = TextStyle(font: FontsManager.fontFor(name: "Roboto-Regular", size: 17), color: Colors.fGray)
+    /// Roboto-Bold - 17
+    public static let regular_bold = TextStyle(font: FontsManager.fontFor(name: "Roboto-Bold", size: 17), color: Colors.fBlack)
     /// Roboto-Regular - 14
     public static let small = TextStyle(font: FontsManager.fontFor(name: "Roboto-Regular", size: 14), color: Colors.fGray)
     /// Roboto-Regular - 8
