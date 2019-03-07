@@ -1,6 +1,6 @@
 PODS:
   - AloeStackView (1.0.1)
-  - BookmarkCoreDLS (0.0.8):
+  - BookmarkCoreDLS (0.0.8.2):
     - SnapKit
   - SnapKit (4.2.0)
 
@@ -19,7 +19,7 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   AloeStackView: d22c006da4510db5e220968234174654b5ed6ea5
-  BookmarkCoreDLS: 0fe37b701a51cb63957b69af5e9cfef981988b2f
+  BookmarkCoreDLS: 95fb0eee230f1ebfa45a6e2aa0181f0ef763c4f3
   SnapKit: fe8a619752f3f27075cc9a90244d75c6c3f27e2a
 
 PODFILE CHECKSUM: adbe82fb0fb5f5410798726357832ceff9adf095
