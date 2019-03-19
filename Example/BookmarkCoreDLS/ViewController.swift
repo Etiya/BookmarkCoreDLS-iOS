@@ -54,12 +54,23 @@ class ViewController: AloeStackViewController {
         extraDetailView.titleLabel.text = "Extra Detail View"
         extraDetailView.subtitleLabel.text = "Extra Subtitle Detail"
         extraDetailView.extraDetailLabel.text = "Description"
-//        stackView.addRow(extraDetailView)
+        stackView.addRow(extraDetailView)
+
+        /// STEPPER
+        let stepper = EStepper(min: 0.5, max: 10.0, step: 0.5, valueType: "GB")
+        stepper.minusIconImage = UIImage(named: "icon_minus")
+        stepper.plusIconImage = UIImage(named: "icon_plus")
+//        stepper.hideMinMaxLabel = true
+        stackView.addRow(stepper)
         
-        let d = EStepper(min: 0.5, max: 10.0, step: 0.1, valueType: "GB")
-        d.minusIconImage = UIImage(named: "icon_minus")
-        d.plusIconImage = UIImage(named: "icon_plus")
-        stackView.addRow(d)
+        /// SEGMENTED CONTROL
+        let sControl = ESegmentedControl(frame: CGRect.zero, buttonTitle: ["Phone Number", "Email address"])
+//        sControl.delegate = self
+        stackView.addRow(sControl)
+        
+        /// INFORMATION VIEW
+        let iv = EInformationView(infoText: "You can put any string here to inform your user, kind of alert hhh !")
+        stackView.addRow(iv)
         
     }
 }

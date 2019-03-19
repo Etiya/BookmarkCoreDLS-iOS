@@ -97,6 +97,8 @@
 		EF9B5F9B61EA7C75F4D97DD3EBDE3719 /* carret@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8847B3487B110D2F47E5B236A2A86C4C /* carret@3x.png */; };
 		F13D59FDA9789A1A7A16737EB71EC25A /* BookmarkCoreDLS-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 443D7D43E8ADE66C82D4B54696C3DA7B /* BookmarkCoreDLS-dummy.m */; };
 		F1A40A26078150A0F4208BF8DD66ECF5 /* UIImage+DLS.swift in Sources */ = {isa = PBXBuildFile; fileRef = C776645F2E7BFF4D292CB8F9831C324C /* UIImage+DLS.swift */; };
+		F429C4682240F73A00D5AAC4 /* ESegmentedControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = F429C4672240F73A00D5AAC4 /* ESegmentedControl.swift */; };
+		F429C46A2240FAB800D5AAC4 /* EInformationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F429C4692240FAB800D5AAC4 /* EInformationView.swift */; };
 		F5067B4E3E35F94961341AF13B4D89C0 /* ConstraintLayoutSupport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1656DFA7D6C03A6EA4C2DD12DEE8D23B /* ConstraintLayoutSupport.swift */; };
 		F77EB915F1ACA246F00CD520CA1B5B9D /* ConstraintLayoutGuide+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E74DB9DBF61F60A21669A0E749A4014 /* ConstraintLayoutGuide+Extensions.swift */; };
 		F8E4E61C6EDF4C301FCADCC5CD40EB5C /* ConstraintPriorityTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA15529C258E5417CDC8FB79C7EA204F /* ConstraintPriorityTarget.swift */; };
@@ -163,18 +165,18 @@
 		190EDD4725F6377D2CC9B78C3DB89937 /* ConstraintMakerEditable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintMakerEditable.swift; path = Source/ConstraintMakerEditable.swift; sourceTree = "<group>"; };
 		1E7263B25F440CFE80C7942C1CB583C8 /* Pods-BookmarkCoreDLS_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-BookmarkCoreDLS_Example.release.xcconfig"; sourceTree = "<group>"; };
 		1EF3FD9EF670B9D74177F1A34F4A6082 /* SnapKit.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SnapKit.xcconfig; sourceTree = "<group>"; };
-		1F1EB124F322E91E506ADD3C75429114 /* Pods_BookmarkCoreDLS_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_BookmarkCoreDLS_Tests.framework; path = "Pods-BookmarkCoreDLS_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1F1EB124F322E91E506ADD3C75429114 /* Pods_BookmarkCoreDLS_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BookmarkCoreDLS_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1FC41B3E48480D7A4D163C7FF3DD669F /* Pods-BookmarkCoreDLS_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-BookmarkCoreDLS_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		292394D638A7B2A1E31862B748770797 /* ResourceBundle-BookmarkCoreDLS-BookmarkCoreDLS-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-BookmarkCoreDLS-BookmarkCoreDLS-Info.plist"; sourceTree = "<group>"; };
 		293475172C5C76895F328B24925F9756 /* ConstraintLayoutGuideDSL.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintLayoutGuideDSL.swift; path = Source/ConstraintLayoutGuideDSL.swift; sourceTree = "<group>"; };
-		293D7FD571209B4592B9837DE2CA9A28 /* Pods_BookmarkCoreDLS_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_BookmarkCoreDLS_Example.framework; path = "Pods-BookmarkCoreDLS_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		293D7FD571209B4592B9837DE2CA9A28 /* Pods_BookmarkCoreDLS_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BookmarkCoreDLS_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2B8FDC21A6B83DD3138AA020DF9DD830 /* StackViewCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StackViewCell.swift; path = Sources/AloeStackView/Views/StackViewCell.swift; sourceTree = "<group>"; };
 		2C0932BA37FEF0F89745187331662D9F /* ConstraintOffsetTarget.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintOffsetTarget.swift; path = Source/ConstraintOffsetTarget.swift; sourceTree = "<group>"; };
 		2CF5FF32A614E1FEFF32EC9826DB6F97 /* Pods-BookmarkCoreDLS_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-BookmarkCoreDLS_Example-Info.plist"; sourceTree = "<group>"; };
 		317B11BFD1C69EBC9511E3B3346596D2 /* BookmarkCoreDLS.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = BookmarkCoreDLS.xcconfig; sourceTree = "<group>"; };
 		317E8541FF02F054706A8FEFE4AB3347 /* LayoutConstraintItem.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LayoutConstraintItem.swift; path = Source/LayoutConstraintItem.swift; sourceTree = "<group>"; };
-		3307CDEA06FFA26EB4E9F0F3AE5C4954 /* Roboto-Light.ttf */ = {isa = PBXFileReference; includeInIndex = 1; path = "Roboto-Light.ttf"; sourceTree = "<group>"; };
-		3405A8BD9B8E02D7E157B2FCD6967A3F /* Roboto-Black.ttf */ = {isa = PBXFileReference; includeInIndex = 1; path = "Roboto-Black.ttf"; sourceTree = "<group>"; };
+		3307CDEA06FFA26EB4E9F0F3AE5C4954 /* Roboto-Light.ttf */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file; path = "Roboto-Light.ttf"; sourceTree = "<group>"; };
+		3405A8BD9B8E02D7E157B2FCD6967A3F /* Roboto-Black.ttf */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file; path = "Roboto-Black.ttf"; sourceTree = "<group>"; };
 		3488FE7023790B8539FAB299F4A4C378 /* FixedBottomPriceView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = FixedBottomPriceView.swift; sourceTree = "<group>"; };
 		34BBC9E03250AA3F0825A3E07F6E73B4 /* BookmarkCoreDLS.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = BookmarkCoreDLS.modulemap; sourceTree = "<group>"; };
 		354BFD196E284A7944D9166146120B3E /* AmountSelectionView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AmountSelectionView.swift; sourceTree = "<group>"; };
@@ -183,16 +185,16 @@
 		3A6CE31273F6259AF80E56834C4A6B49 /* ConstraintDSL.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintDSL.swift; path = Source/ConstraintDSL.swift; sourceTree = "<group>"; };
 		3FA9E81A2D01EB1B38F86CB7E997F0D1 /* EView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = EView.swift; sourceTree = "<group>"; };
 		4203620BFDA26A4FBDA68135D54A1363 /* InstructionView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = InstructionView.swift; sourceTree = "<group>"; };
-		4385F6F85858324E470EA87D3E752FC1 /* BookmarkCoreDLS.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = BookmarkCoreDLS.bundle; path = "BookmarkCoreDLS-BookmarkCoreDLS.bundle"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4385F6F85858324E470EA87D3E752FC1 /* BookmarkCoreDLS.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BookmarkCoreDLS.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		443D7D43E8ADE66C82D4B54696C3DA7B /* BookmarkCoreDLS-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "BookmarkCoreDLS-dummy.m"; sourceTree = "<group>"; };
 		48F2CD8F0E858CCD569860EB36DD27D2 /* SnapKit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SnapKit-prefix.pch"; sourceTree = "<group>"; };
 		49E10E510C7A59FD3702E7A2CEA0C168 /* ConstraintInsetTarget.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintInsetTarget.swift; path = Source/ConstraintInsetTarget.swift; sourceTree = "<group>"; };
 		4AAF785FB1D5576C1F65858CA851AC39 /* ConstraintLayoutSupportDSL.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintLayoutSupportDSL.swift; path = Source/ConstraintLayoutSupportDSL.swift; sourceTree = "<group>"; };
 		4F36CFBDF620E679F33D6CBB1844017C /* Tappable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Tappable.swift; path = Sources/AloeStackView/Protocols/Tappable.swift; sourceTree = "<group>"; };
 		5202C5B07BC38C68BDE05A0C092C6AD6 /* DropdownButton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = DropdownButton.swift; sourceTree = "<group>"; };
-		5652F23A4B333A342CF170FF09454453 /* BookmarkCoreDLS.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = BookmarkCoreDLS.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		5652F23A4B333A342CF170FF09454453 /* BookmarkCoreDLS.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = BookmarkCoreDLS.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		58576B700331B67C1651B7FB73A3CAB1 /* ConstraintInsets.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintInsets.swift; path = Source/ConstraintInsets.swift; sourceTree = "<group>"; };
-		5AB6201CF3CED6BC7771B42B43AE4199 /* BookmarkCoreDLS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = BookmarkCoreDLS.framework; path = BookmarkCoreDLS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5AB6201CF3CED6BC7771B42B43AE4199 /* BookmarkCoreDLS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = BookmarkCoreDLS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5B3A37678A32F395E613FEA3FE8AD547 /* ExtraDetailView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ExtraDetailView.swift; sourceTree = "<group>"; };
 		5CD93E2E9D98F69FCB98094161CFC071 /* EButton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = EButton.swift; sourceTree = "<group>"; };
 		5E74DB9DBF61F60A21669A0E749A4014 /* ConstraintLayoutGuide+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "ConstraintLayoutGuide+Extensions.swift"; path = "Source/ConstraintLayoutGuide+Extensions.swift"; sourceTree = "<group>"; };
@@ -214,7 +216,7 @@
 		792CA1E567D74106634CD3BC1726EC61 /* ConstraintMakerPriortizable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintMakerPriortizable.swift; path = Source/ConstraintMakerPriortizable.swift; sourceTree = "<group>"; };
 		810930D1071CF5C377E9DFE9B879B748 /* ConstraintMakerExtendable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintMakerExtendable.swift; path = Source/ConstraintMakerExtendable.swift; sourceTree = "<group>"; };
 		823317B648E07C7D4AAB1887E2012657 /* ConstraintView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintView.swift; path = Source/ConstraintView.swift; sourceTree = "<group>"; };
-		82B740B72917DA5A68BE73A46C87A9FD /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		82B740B72917DA5A68BE73A46C87A9FD /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		83DD32A716D094FCCAC78A9745E60649 /* BookmarkDLS+UIEdgeInsets.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "BookmarkDLS+UIEdgeInsets.swift"; sourceTree = "<group>"; };
 		87B9DC942ED5D7F7115CB110B8518FEC /* AccordionRow.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AccordionRow.swift; sourceTree = "<group>"; };
 		88284FD2000AEB895CA3D9129A8040D7 /* BookmarkCoreDLS-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "BookmarkCoreDLS-umbrella.h"; sourceTree = "<group>"; };
@@ -228,19 +230,19 @@
 		918242C5F610DE7944ADCA29AF1C9639 /* InformationView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = InformationView.swift; sourceTree = "<group>"; };
 		9195FE3A273754F51CA03DA62775AFBC /* LargePriceView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LargePriceView.swift; sourceTree = "<group>"; };
 		9280158376F3280311AE03EDD2F6554D /* AloeStackView-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "AloeStackView-Info.plist"; sourceTree = "<group>"; };
-		94C0D04218BBE5197810DF7752F8B53D /* Roboto-Medium.ttf */ = {isa = PBXFileReference; includeInIndex = 1; path = "Roboto-Medium.ttf"; sourceTree = "<group>"; };
+		94C0D04218BBE5197810DF7752F8B53D /* Roboto-Medium.ttf */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file; path = "Roboto-Medium.ttf"; sourceTree = "<group>"; };
 		96AC55B604936711105736D775B8AA6B /* carret.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = carret.png; sourceTree = "<group>"; };
 		99C4FA750CF8654B9401707BC2CEF4EF /* EStepper.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = EStepper.swift; sourceTree = "<group>"; };
 		9B99EFB61E96609D6EFB43A6EBC6CBFA /* TextStyles.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TextStyles.swift; sourceTree = "<group>"; };
 		9C7ED702CA686A179EB2F0095332649D /* Pods-BookmarkCoreDLS_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-BookmarkCoreDLS_Tests-dummy.m"; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		A12DB8CE22C04D470716E70C230BD353 /* Highlightable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Highlightable.swift; path = Sources/AloeStackView/Protocols/Highlightable.swift; sourceTree = "<group>"; };
 		A7B3CEDCAF59080483C6352259E18759 /* SeparatorHiding.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SeparatorHiding.swift; path = Sources/AloeStackView/Protocols/SeparatorHiding.swift; sourceTree = "<group>"; };
 		A92C2714910C0C9FABD1CE8F07806297 /* ConstraintRelation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintRelation.swift; path = Source/ConstraintRelation.swift; sourceTree = "<group>"; };
 		A997CB3F25C801DE5CD10C32E62207B4 /* ConstraintAttributes.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintAttributes.swift; path = Source/ConstraintAttributes.swift; sourceTree = "<group>"; };
 		A9F3AC7E37D27C74DF31A758CD7B5689 /* ConstraintItem.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintItem.swift; path = Source/ConstraintItem.swift; sourceTree = "<group>"; };
 		AA2BA2190BEF9A68412D892D9827C795 /* ConstraintView+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "ConstraintView+Extensions.swift"; path = "Source/ConstraintView+Extensions.swift"; sourceTree = "<group>"; };
-		AADCDCDD542ACE17D7A72941B10ADD20 /* Roboto-Bold.ttf */ = {isa = PBXFileReference; includeInIndex = 1; path = "Roboto-Bold.ttf"; sourceTree = "<group>"; };
+		AADCDCDD542ACE17D7A72941B10ADD20 /* Roboto-Bold.ttf */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file; path = "Roboto-Bold.ttf"; sourceTree = "<group>"; };
 		AC78D50F931458BB5364B2AE6D822C88 /* SummaryRowView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SummaryRowView.swift; sourceTree = "<group>"; };
 		ACD4B65974571BC40D9E59F858CD1CB3 /* Constraint.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Constraint.swift; path = Source/Constraint.swift; sourceTree = "<group>"; };
 		B0E9E57B49DBC2817D6139D4B625DDBA /* AloeStackView.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = AloeStackView.modulemap; sourceTree = "<group>"; };
@@ -252,7 +254,7 @@
 		BD5DC2DADCA7D5DD9E3E1D517ED08847 /* Pods-BookmarkCoreDLS_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-BookmarkCoreDLS_Tests-umbrella.h"; sourceTree = "<group>"; };
 		BDE00643A18ADE67AF9019D0A6F47256 /* SeparatorView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SeparatorView.swift; path = Sources/AloeStackView/Views/SeparatorView.swift; sourceTree = "<group>"; };
 		BF181AF978BD273E982CB4D58D9A4ECC /* Pods-BookmarkCoreDLS_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-BookmarkCoreDLS_Example-dummy.m"; sourceTree = "<group>"; };
-		C31B06F23B59CDF75C92B7B87A7D17AE /* Roboto-Regular.ttf */ = {isa = PBXFileReference; includeInIndex = 1; path = "Roboto-Regular.ttf"; sourceTree = "<group>"; };
+		C31B06F23B59CDF75C92B7B87A7D17AE /* Roboto-Regular.ttf */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file; path = "Roboto-Regular.ttf"; sourceTree = "<group>"; };
 		C42F83551FAC06AD7513E7893BAC0520 /* ConstraintMakerRelatable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintMakerRelatable.swift; path = Source/ConstraintMakerRelatable.swift; sourceTree = "<group>"; };
 		C58EFA8059905CE610201646998C1E2B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		C776645F2E7BFF4D292CB8F9831C324C /* UIImage+DLS.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIImage+DLS.swift"; path = "BookmarkCoreDLS/Classes/UIImage+DLS.swift"; sourceTree = "<group>"; };
@@ -262,10 +264,10 @@
 		D117ED8FC9251E191B502A945198AC5F /* Debugging.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Debugging.swift; path = Source/Debugging.swift; sourceTree = "<group>"; };
 		D71519E924471720253FDC6910F5CE17 /* EiOS.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = EiOS.png; sourceTree = "<group>"; };
 		D7D29F3862EC0C6388C6CA27CD512D5F /* AloeStackView-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AloeStackView-umbrella.h"; sourceTree = "<group>"; };
-		DD39C5194F7812229B76AE048F229DE3 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		DD39C5194F7812229B76AE048F229DE3 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		DD57681407AEFD673B38C05BBB4DCB56 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		DED8ABCFD04108907BC6260E97256BA8 /* AloeStackView.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = AloeStackView.xcconfig; sourceTree = "<group>"; };
-		E28AC0FB421ABE8730429711E52CA8A9 /* AloeStackView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = AloeStackView.framework; path = AloeStackView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E28AC0FB421ABE8730429711E52CA8A9 /* AloeStackView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AloeStackView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E516D377E88A3022B14C851ED1E979BD /* ConstraintPriority.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintPriority.swift; path = Source/ConstraintPriority.swift; sourceTree = "<group>"; };
 		E7558F92801A3135D0AD5A4984A900B7 /* Pods-BookmarkCoreDLS_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-BookmarkCoreDLS_Example.modulemap"; sourceTree = "<group>"; };
 		E86821578FF2D7833C05DE3BCB870609 /* ConstraintLayoutGuide.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintLayoutGuide.swift; path = Source/ConstraintLayoutGuide.swift; sourceTree = "<group>"; };
@@ -274,11 +276,13 @@
 		EBE5E3FD12467D536C6DBC6C06878BF7 /* Pods-BookmarkCoreDLS_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-BookmarkCoreDLS_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		EC1A3F45AB10AA8DC1974BE1ACA4D332 /* Pods-BookmarkCoreDLS_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-BookmarkCoreDLS_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		EF31B03F3AE2F44892E95588A34C1B43 /* SummaryLongRowView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SummaryLongRowView.swift; sourceTree = "<group>"; };
+		F429C4672240F73A00D5AAC4 /* ESegmentedControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ESegmentedControl.swift; sourceTree = "<group>"; };
+		F429C4692240FAB800D5AAC4 /* EInformationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EInformationView.swift; sourceTree = "<group>"; };
 		F731F4BF50FC05ED7B3453A9197A04C0 /* ConstraintMultiplierTarget.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintMultiplierTarget.swift; path = Source/ConstraintMultiplierTarget.swift; sourceTree = "<group>"; };
 		F8CA5ED637A3B0E93A3A87AD084F6B7D /* Pods-BookmarkCoreDLS_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-BookmarkCoreDLS_Example-frameworks.sh"; sourceTree = "<group>"; };
 		FBABA10C86C917AC5CBA7C4E5ADE84C5 /* ConstraintMaker.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintMaker.swift; path = Source/ConstraintMaker.swift; sourceTree = "<group>"; };
 		FC6955D460CE18EEA0A826CCE27D74B2 /* SnapKit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SnapKit.modulemap; sourceTree = "<group>"; };
-		FF3FA7022EEDBC7D490A171FC5DF9BDF /* SnapKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SnapKit.framework; path = SnapKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FF3FA7022EEDBC7D490A171FC5DF9BDF /* SnapKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SnapKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF86EC13BBE7E8C900C82FDFCFC0761A /* AloeStackView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "AloeStackView-dummy.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -407,7 +411,9 @@
 				70361B929EF242A392545024AB42C071 /* ELabel.swift */,
 				5FDA3A4629B5D7FB4EB34D5CC8897C0E /* EPushButton.swift */,
 				99C4FA750CF8654B9401707BC2CEF4EF /* EStepper.swift */,
+				F429C4672240F73A00D5AAC4 /* ESegmentedControl.swift */,
 				C97604E12D80991ADD5FD9895CFA0C13 /* ETextField.swift */,
+				F429C4692240FAB800D5AAC4 /* EInformationView.swift */,
 			);
 			name = Controls;
 			path = BookmarkCoreDLS/Classes/Controls;
@@ -435,7 +441,6 @@
 				4F36CFBDF620E679F33D6CBB1844017C /* Tappable.swift */,
 				B52BF15E907EE00D8EB78B99E08DDC66 /* Support Files */,
 			);
-			name = AloeStackView;
 			path = AloeStackView;
 			sourceTree = "<group>";
 		};
@@ -646,7 +651,6 @@
 				62278282B9866FA2B12B640702A7F2D7 /* UILayoutSupport+Extensions.swift */,
 				B6C6640C361995CF2AFC1DCBC434E570 /* Support Files */,
 			);
-			name = SnapKit;
 			path = SnapKit;
 			sourceTree = "<group>";
 		};
@@ -926,6 +930,7 @@
 				428332619DB9BDBA7BB080E689C97AEF /* Checkbox.swift in Sources */,
 				CAFC081EF66D5EAA40E72974263F50F0 /* Colors.swift in Sources */,
 				9602C3857BC6DBDA572DE8A5CEE99572 /* ComponentFactory.swift in Sources */,
+				F429C4682240F73A00D5AAC4 /* ESegmentedControl.swift in Sources */,
 				641A85FF47E345545AB61A4A9D3C2C08 /* DropdownButton.swift in Sources */,
 				46488E28D9A36C71D2179A70B5B9307E /* EButton.swift in Sources */,
 				DA616A788CC9016B45C76A0CCEF448C1 /* ELabel.swift in Sources */,
@@ -940,6 +945,7 @@
 				17E7D8EB84C6732E191563D959233DCF /* InstructionView.swift in Sources */,
 				656F818F2B4156F1FBE53EE2D639656A /* LargePriceView.swift in Sources */,
 				7D3C2C27701F409C4FC8C658F931043E /* LargeSectionView.swift in Sources */,
+				F429C46A2240FAB800D5AAC4 /* EInformationView.swift in Sources */,
 				E473D76B4B59586A88BD60EC6070D6E6 /* LargeSectionWithSubtitleView.swift in Sources */,
 				5B12DE7AFBE5F57A49625E136A3DBB6C /* NoteView.swift in Sources */,
 				134B399DE15A0AD8358339E158845FCC /* SelectablePriceCell.swift in Sources */,
@@ -1192,8 +1198,7 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 4.2;
 				SYMROOT = "${SRCROOT}/../build";
 			};
