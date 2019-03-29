@@ -72,7 +72,42 @@ class ViewController: AloeStackViewController {
         let iv = EInformationView(infoText: "You can put any string here to inform your user, kind of alert hhh !")
         stackView.addRow(iv)
         
+        let showPopup = ComponentFactory.makeLineActionButton()
+        showPopup.addTarget(self, action: #selector(customPopup), for: .touchUpInside)
+        showPopup.setTitle("Display Custom Button", for: .normal)
+        stackView.addRow(showPopup)
+        
     }
+    
+    @objc func noop() {}
+    @objc private func customPopup() {
+        
+        let image = UIImage(named: "smallspot-911")
+        let firstBtn: UIButton = {
+            let b = ComponentFactory.makeActionButton()
+            b.addTarget(self, action: #selector(noop), for: .touchUpInside)
+            b.setTitle("Use", for: .normal)
+            return b
+        }()
+        
+        let secondBtn: UIButton = {
+            let b = ComponentFactory.makeLineActionButton()
+            b.addTarget(self, action: #selector(noop), for: .touchUpInside)
+            b.setTitle("Gift", for: .normal)
+            return b
+        }()
+        
+        let popup = EPopup(
+            messageText: "This is my message, i think its a bit long but anyway, im just testing it..",
+            titleText: "Here is my title, why not making it multiple line as well..",
+            image: nil, //nil,
+            buttons: nil,//[firstBtn, secondBtn], //nil,
+            completionHandler: nil
+        )
+        
+        popup.show()
+    }
+    
 }
 
 extension ViewController {

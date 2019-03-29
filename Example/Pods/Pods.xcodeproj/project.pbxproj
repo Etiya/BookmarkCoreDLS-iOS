@@ -97,6 +97,7 @@
 		EF9B5F9B61EA7C75F4D97DD3EBDE3719 /* carret@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8847B3487B110D2F47E5B236A2A86C4C /* carret@3x.png */; };
 		F13D59FDA9789A1A7A16737EB71EC25A /* BookmarkCoreDLS-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 443D7D43E8ADE66C82D4B54696C3DA7B /* BookmarkCoreDLS-dummy.m */; };
 		F1A40A26078150A0F4208BF8DD66ECF5 /* UIImage+DLS.swift in Sources */ = {isa = PBXBuildFile; fileRef = C776645F2E7BFF4D292CB8F9831C324C /* UIImage+DLS.swift */; };
+		F4173CD1224E4498005991B0 /* EPopup.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4173CCF224E4459005991B0 /* EPopup.swift */; };
 		F429C4682240F73A00D5AAC4 /* ESegmentedControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = F429C4672240F73A00D5AAC4 /* ESegmentedControl.swift */; };
 		F429C46A2240FAB800D5AAC4 /* EInformationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F429C4692240FAB800D5AAC4 /* EInformationView.swift */; };
 		F5067B4E3E35F94961341AF13B4D89C0 /* ConstraintLayoutSupport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1656DFA7D6C03A6EA4C2DD12DEE8D23B /* ConstraintLayoutSupport.swift */; };
@@ -276,6 +277,7 @@
 		EBE5E3FD12467D536C6DBC6C06878BF7 /* Pods-BookmarkCoreDLS_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-BookmarkCoreDLS_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		EC1A3F45AB10AA8DC1974BE1ACA4D332 /* Pods-BookmarkCoreDLS_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-BookmarkCoreDLS_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		EF31B03F3AE2F44892E95588A34C1B43 /* SummaryLongRowView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SummaryLongRowView.swift; sourceTree = "<group>"; };
+		F4173CCF224E4459005991B0 /* EPopup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EPopup.swift; sourceTree = "<group>"; };
 		F429C4672240F73A00D5AAC4 /* ESegmentedControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ESegmentedControl.swift; sourceTree = "<group>"; };
 		F429C4692240FAB800D5AAC4 /* EInformationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EInformationView.swift; sourceTree = "<group>"; };
 		F731F4BF50FC05ED7B3453A9197A04C0 /* ConstraintMultiplierTarget.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintMultiplierTarget.swift; path = Source/ConstraintMultiplierTarget.swift; sourceTree = "<group>"; };
@@ -397,6 +399,7 @@
 				6BE51052E91FB7291EEABBD48DAB40B5 /* NoteView.swift */,
 				EF31B03F3AE2F44892E95588A34C1B43 /* SummaryLongRowView.swift */,
 				AC78D50F931458BB5364B2AE6D822C88 /* SummaryRowView.swift */,
+				F4173CCF224E4459005991B0 /* EPopup.swift */,
 			);
 			name = Views;
 			path = BookmarkCoreDLS/Classes/Views;
@@ -952,6 +955,7 @@
 				7EFED51C2EC9C4304A4754349EA7D7AE /* Spacing.swift in Sources */,
 				0FF4EC6E9BD6867BA73472D8FFE94B9F /* SummaryLongRowView.swift in Sources */,
 				4D9037BC01AC31DCB507D21D6673F991 /* SummaryRowView.swift in Sources */,
+				F4173CD1224E4498005991B0 /* EPopup.swift in Sources */,
 				A170B9DDB4343A099A08E71206840892 /* TextStyles.swift in Sources */,
 				F1A40A26078150A0F4208BF8DD66ECF5 /* UIImage+DLS.swift in Sources */,
 			);
