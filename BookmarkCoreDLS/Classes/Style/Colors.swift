@@ -16,4 +16,26 @@ public enum Colors {
     public static let fBlack = #colorLiteral(red: 0.1294117647, green: 0.1450980392, blue: 0.1607843137, alpha: 1)
     public static let fGray = #colorLiteral(red: 0.4235294118, green: 0.4588235294, blue: 0.4901960784, alpha: 1)
     public static let fLightGray = #colorLiteral(red: 0.862745098, green: 0.862745098, blue: 0.9019607843, alpha: 1)
+    public static let fTitle = UIColor(hexString: "#212529")
+    public static let fDescription = UIColor(hexString: "#6C757D")
+}
+
+fileprivate extension UIColor {
+    convenience init(hexString: String, alpha: CGFloat = 1.0) {
+        let hexString: String = hexString.trimmingCharacters(in: CharacterSet.whitespacesAndNewlines)
+        let scanner = Scanner(string: hexString)
+        if hexString.hasPrefix("#") {
+            scanner.scanLocation = 1
+        }
+        var color: UInt32 = 0
+        scanner.scanHexInt32(&color)
+        let mask = 0x000000FF
+        let r = Int(color >> 16) & mask
+        let g = Int(color >> 8) & mask
+        let b = Int(color) & mask
+        let red   = CGFloat(r) / 255.0
+        let green = CGFloat(g) / 255.0
+        let blue  = CGFloat(b) / 255.0
+        self.init(red: red, green: green, blue: blue, alpha: alpha)
+    }
 }

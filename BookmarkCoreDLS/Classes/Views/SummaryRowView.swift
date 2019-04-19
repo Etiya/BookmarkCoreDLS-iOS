@@ -8,7 +8,7 @@
 
 import Foundation
 
-public class SummaryRowView: UIView {
+public class SummaryRowView: EView {
     
     public override var intrinsicContentSize: CGSize {
         return CGSize(width: UIView.noIntrinsicMetric, height: 60)
@@ -18,18 +18,8 @@ public class SummaryRowView: UIView {
     public lazy var priceLabel = ComponentFactory.makeLabel(with: TextStyles.title3)
     private lazy var stackView = UIStackView()
     
-    public override init(frame: CGRect) {
-        super.init(frame: frame)
-        commonInit()
-    }
-    
-    public required init?(coder aDecoder: NSCoder) {
-        super.init(coder: aDecoder)
-        commonInit()
-    }
-    
-    private func commonInit() {
-        backgroundColor = .white
+    public override func commonInit() {
+        
         addSubview(stackView)
         priceLabel.textAlignment = .right
         priceLabel.setContentHuggingPriority(.required, for: .horizontal)

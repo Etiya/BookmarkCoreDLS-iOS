@@ -12,7 +12,7 @@ public protocol AccordionRowViewDelegate: class {
     func stateChanged(_ row: AccordionRow)
 }
 
-public class AccordionRow: UIView {
+public class AccordionRow: EView {
     
     weak var delegate: AccordionRowViewDelegate?
     lazy var label = ELabel()
@@ -53,7 +53,7 @@ public class AccordionRow: UIView {
         super.init(coder: aDecoder)
     }
     
-    private func commonInit() {
+    public override func commonInit() {
         translatesAutoresizingMaskIntoConstraints = false
         clipsToBounds = true
         setupHeaderView()

@@ -8,7 +8,7 @@
 
 import UIKit
 
-public class SummaryLongRowView: UIView {
+public class SummaryLongRowView: EView {
     
     public override var intrinsicContentSize: CGSize {
         return CGSize(width: UIView.noIntrinsicMetric, height: 80)
@@ -19,17 +19,7 @@ public class SummaryLongRowView: UIView {
     public lazy var subtitleLabel = ComponentFactory.makeLabel(with: TextStyles.small)
     public lazy var priceLabel = ComponentFactory.makeLabel(with: TextStyles.title3)
     
-    public override init(frame: CGRect) {
-        super.init(frame: frame)
-        commonInit()
-    }
-    
-    public required init?(coder aDecoder: NSCoder) {
-        super.init(coder: aDecoder)
-        commonInit()
-    }
-    
-    private func commonInit() {
+    public override func commonInit() {
         
         subtitleLabel.numberOfLines = 0
         subtitleLabel.lineBreakMode = .byWordWrapping

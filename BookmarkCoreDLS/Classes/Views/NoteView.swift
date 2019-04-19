@@ -8,7 +8,7 @@
 
 import UIKit
 
-public class NoteView: UIView {
+public class NoteView: EView {
     
     public lazy var label = ELabel()
     private lazy var mainSV = UIStackView()
@@ -30,23 +30,14 @@ public class NoteView: UIView {
         }
     }
     
-    public override init(frame: CGRect) {
-        super.init(frame: .zero)
-        commonInit()
-    }
-    
-    public required init?(coder aDecoder: NSCoder) {
-        super.init(coder: aDecoder)
-        commonInit()
-    }
-    
     private func addIconViewIfNeeded() {
         if !mainSV.arrangedSubviews.contains(iconView) {
             mainSV.insertArrangedSubview(iconView, at: 0)
         }
     }
     
-    private func commonInit() {
+    public override func commonInit() {
+        
         label.textStyle = TextStyles.small
         label.numberOfLines = 0
         label.lineBreakMode = .byWordWrapping

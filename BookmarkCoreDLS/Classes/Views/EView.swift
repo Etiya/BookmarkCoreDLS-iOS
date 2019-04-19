@@ -21,6 +21,6 @@ public class EView: UIView {
     }
     
     internal func commonInit() {
-        
+        backgroundColor = .clear
     }
 }

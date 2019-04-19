@@ -8,7 +8,7 @@
 
 import UIKit
 
-public class LargeSectionWithSubtitleView: UIView {
+public class LargeSectionWithSubtitleView: EView {
     
     public lazy var titleLabel = ComponentFactory.makeLabel(with: TextStyles.title3)
     public lazy var subtitleLabel = ComponentFactory.makeLabel(with: TextStyles.regular)
@@ -40,17 +40,7 @@ public class LargeSectionWithSubtitleView: UIView {
     
     private lazy var tapGesture = UITapGestureRecognizer(target: self, action: #selector(handleIconTap))
     
-    public override init(frame: CGRect) {
-        super.init(frame: frame)
-        self.initialize()
-    }
-    
-    public required init?(coder aDecoder: NSCoder) {
-        super.init(coder: aDecoder)
-        self.initialize()
-    }
-    
-    private func initialize() {
+    public override func commonInit() {
 //        layoutMargins = UIEdgeInsets(top: Spacing.small, left: Spacing.small, bottom: Spacing.small, right: Spacing.small)
         subtitleLabel.numberOfLines = 0
         subtitleLabel.lineBreakMode = .byWordWrapping

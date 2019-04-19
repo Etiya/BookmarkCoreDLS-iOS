@@ -8,7 +8,7 @@
 
 import UIKit
 
-public class CommRatesView: UIView {
+public class CommRatesView: EView {
     
     public var walletImageView = UIImageView()
     
@@ -19,7 +19,7 @@ public class CommRatesView: UIView {
     }
     
     public var callLabel: UILabel = {
-        let label = UILabel()
+        let label = ELabel()
         label.text = "Calls"
         label.textAlignment = .left
         label.font = TextStyles.small.font
@@ -28,7 +28,7 @@ public class CommRatesView: UIView {
     }()
     
     public var textLabel: UILabel = {
-        let label = UILabel()
+        let label = ELabel()
         label.text = "Texts"
         label.textAlignment = .left
         label.font = TextStyles.small.font
@@ -36,7 +36,7 @@ public class CommRatesView: UIView {
         return label
     }()
     public var dataLabel: UILabel = {
-        let label = UILabel()
+        let label = ELabel()
         label.text = "Data"
         label.textAlignment = .left
         label.font = TextStyles.small.font
@@ -45,7 +45,7 @@ public class CommRatesView: UIView {
     }()
     
     public var callRateLabel: UILabel = {
-        let label = UILabel()
+        let label = ELabel()
         label.text = "$0.10 / min"
         label.textAlignment = .right
         label.font = TextStyles.small.font
@@ -53,7 +53,7 @@ public class CommRatesView: UIView {
         return label
     }()
     public var textRateLabel: UILabel = {
-        let label = UILabel()
+        let label = ELabel()
         label.text = "$0.05 / text"
         label.textAlignment = .right
         label.font = TextStyles.small.font
@@ -61,7 +61,7 @@ public class CommRatesView: UIView {
         return label
     }()
     public var dataRateLabel: UILabel = {
-        let label = UILabel()
+        let label = ELabel()
         label.text = "N/A"
         label.textAlignment = .right
         label.font = TextStyles.small.font

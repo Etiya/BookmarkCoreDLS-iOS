@@ -21,9 +21,10 @@ class ViewController: AloeStackViewController {
             stackView.contentInsetAdjustmentBehavior = .always
         }
     
-        stackView.separatorInset = UIEdgeInsets.init(top: 0, left: 16, bottom: 0, right: 16)
+        stackView.backgroundColor = .clear
+        stackView.separatorInset = UIEdgeInsets.small_LR
         
-        let button = ComponentFactory.makeLineActionButton()
+        let button = ComponentFactory.makeActionButton()
         button.setTitle("Hello", for: .normal)
         stackView.addRow(button)
         

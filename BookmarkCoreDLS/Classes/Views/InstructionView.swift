@@ -8,7 +8,7 @@
 
 import UIKit
 
-public class InstructionView: UIView {
+public class InstructionView: EView {
     
     private let labelContainer = UIStackView()
     private lazy var thumbnailView: UIImageView = {
@@ -36,8 +36,7 @@ public class InstructionView: UIView {
         commonInit()
     }
     
-    private func commonInit() {
-        backgroundColor = UIColor.white
+    public override func commonInit() {
         
         titleLabel.textStyle?.color = Colors.fDarkBlue
         descriptionLabel.numberOfLines = 0

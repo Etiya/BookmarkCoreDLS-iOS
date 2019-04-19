@@ -9,7 +9,7 @@
 import UIKit
 import SnapKit
 
-public class EInformationView: UIView {
+public class EInformationView: EView {
     
     public lazy var infoLabel: UILabel = {
         let lbl = ELabel()
@@ -26,6 +26,12 @@ public class EInformationView: UIView {
         }
     }
     
+    public var borderColor: UIColor? {
+        didSet {
+            self.layer.borderColor = borderColor?.cgColor
+        }
+    }
+    
     public override var intrinsicContentSize: CGSize {
         return CGSize(width: UIView.noIntrinsicMetric, height: 56)
     }
@@ -39,6 +45,16 @@ public class EInformationView: UIView {
     public init(infoText: String) {
         super.init(frame: CGRect.zero)
         self.infoLabel.text = infoText
+        self.borderColor = Colors.fOrange
+        self.containerBackgroundColor = Colors.fOrange.withAlphaComponent(0.1)
+        setupUI()
+    }
+    
+    public init(infoText: String, backgroundColor: UIColor, borderColor: UIColor) {
+        super.init(frame: CGRect.zero)
+        self.infoLabel.text = infoText
+        self.borderColor = borderColor
+        self.containerBackgroundColor = backgroundColor
         setupUI()
     }
     
@@ -49,11 +65,9 @@ public class EInformationView: UIView {
     public func setupUI() {
         
         self.addSubview(infoLabel)
-        self.containerBackgroundColor = Colors.fOrange.withAlphaComponent(0.1)
         self.layer.cornerRadius = 8
         self.layer.masksToBounds = true
         self.layer.borderWidth = 2.0
-        self.layer.borderColor = Colors.fOrange.cgColor
         self.applyShadow(apply: true, color: Colors.fGray, offset: CGSize.zero, opacity: 0.4, radius: 8.0, shadowRect: nil)
         
         self.infoLabel.snp.makeConstraints {

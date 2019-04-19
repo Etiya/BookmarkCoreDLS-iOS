@@ -7,7 +7,7 @@
 //
 import UIKit
 
-public class LargeSectionView: UIView {
+public class LargeSectionView: EView {
     
     public override var intrinsicContentSize: CGSize {
         return CGSize(width: UIView.noIntrinsicMetric, height: 60)
@@ -21,17 +21,7 @@ public class LargeSectionView: UIView {
         }
     }
     
-    public override init(frame: CGRect) {
-        super.init(frame: frame)
-        self.initialize()
-    }
-    
-    public required init?(coder aDecoder: NSCoder) {
-        super.init(coder: aDecoder)
-        self.initialize()
-    }
-    
-    private func initialize() {
+    public override func commonInit() {
 //        layoutMargins = UIEdgeInsets(top: Spacing.small, left: Spacing.small, bottom: Spacing.small, right: Spacing.small)
         self.addSubview(titleLabel)
         titleLabel.snp.makeConstraints({ (make) in

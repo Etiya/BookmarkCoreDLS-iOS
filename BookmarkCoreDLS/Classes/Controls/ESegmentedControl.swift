@@ -12,10 +12,10 @@ public protocol ESegmentedControlDelegate: class {
     func changeToIndex(index: Int)
 }
 
-public class ESegmentedControl: UIView {
+public class ESegmentedControl: EView {
     
     private var buttonTitles: [String]!
-    private var buttons: [UIButton]!
+    public var buttons: [UIButton]!
     private var selectorView: UIView!
     
     public var textColor: UIColor = Colors.fGray
@@ -33,7 +33,6 @@ public class ESegmentedControl: UIView {
     
     override public func draw(_ rect: CGRect) {
         super.draw(rect)
-        self.backgroundColor = UIColor.white
         updateView()
     }
     

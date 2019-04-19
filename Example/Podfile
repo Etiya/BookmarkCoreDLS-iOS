@@ -4,6 +4,7 @@ platform :ios, '10.0'
 target 'BookmarkCoreDLS_Example' do
   pod 'BookmarkCoreDLS', :path => '../'
   pod 'AloeStackView'
+  pod 'SnapKit'
 
   target 'BookmarkCoreDLS_Tests' do
     inherit! :search_paths

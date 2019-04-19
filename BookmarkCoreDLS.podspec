@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'BookmarkCoreDLS'
-  s.version          = '0.0.8.5'
+  s.version          = '0.0.8.6'
   s.summary          = 'BookmarkCoreDLS is a private library for Etiya iOS team.'
   s.swift_version    = '4.2'
   s.requires_arc = true
@@ -36,4 +36,5 @@ BookmarkCoreDLS is a library which contain all essential components for Bookmark
   # s.public_header_files = 'Pod/Classes/**/*.h'
   s.frameworks = 'UIKit'
   s.dependency 'SnapKit'
+  # s.dependency 'SwiftTheme'
 end

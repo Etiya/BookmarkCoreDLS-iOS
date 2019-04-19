@@ -8,7 +8,7 @@
 
 import UIKit
 
-public class InformationView: UIView {
+public class InformationView: EView {
     
     public override var intrinsicContentSize: CGSize {
         return CGSize(width: UIView.noIntrinsicMetric, height: 80)
@@ -29,17 +29,7 @@ public class InformationView: UIView {
         }
     }
     
-    public override init(frame: CGRect) {
-        super.init(frame: frame)
-        self.initialize()
-    }
-    
-    required public init?(coder aDecoder: NSCoder) {
-        super.init(coder: aDecoder)
-        self.initialize()
-    }
-    
-    private func initialize() {
+    public override func commonInit() {
         layoutMargins = UIEdgeInsets(top: Spacing.small, left: Spacing.small, bottom: Spacing.small, right: Spacing.small)
         let containerView = UIView()
         addSubview(containerView)

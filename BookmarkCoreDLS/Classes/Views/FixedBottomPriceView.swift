@@ -8,7 +8,7 @@
 import UIKit
 import SnapKit
 
-public class FixedBottomPriceView: UIView {
+public class FixedBottomPriceView: EView {
     
     private lazy var seperator = UIView()
     
@@ -33,7 +33,7 @@ public class FixedBottomPriceView: UIView {
         commonInit()
     }
     
-    private func commonInit() {
+    public override func commonInit() {
         titleLabel.textStyle = TextStyles.title3
         subtitleLabel.textStyle = TextStyles.regular
         priceLabel.textStyle = TextStyles.title2

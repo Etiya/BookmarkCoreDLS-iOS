@@ -8,7 +8,7 @@
 
 import UIKit
 
-public class EStepper: UIView {
+public class EStepper: EView {
     
     public var min: Float = 0.0
     public var max: Float = 0.0
@@ -57,7 +57,7 @@ public class EStepper: UIView {
     }()
     
     public lazy var counterLabel: UILabel = {
-        let lbl = UILabel()
+        let lbl = ELabel()
         lbl.font = TextStyles.large.font
         lbl.textColor = Colors.fBlack
         lbl.textAlignment = .center
@@ -65,7 +65,7 @@ public class EStepper: UIView {
     }()
     
     private lazy var minLabel: UILabel = {
-        let lbl = UILabel()
+        let lbl = ELabel()
         lbl.font = TextStyles.small.font
         lbl.textColor = Colors.fBlack
         lbl.textAlignment = .center
@@ -73,7 +73,7 @@ public class EStepper: UIView {
     }()
     
     private lazy var maxLabel: UILabel = {
-        let lbl = UILabel()
+        let lbl = ELabel()
         lbl.font = TextStyles.small.font
         lbl.textColor = Colors.fBlack
         lbl.textAlignment = .center
@@ -125,6 +125,8 @@ public class EStepper: UIView {
     }
     
     func setupUI() {
+        
+        container.backgroundColor = .clear
         
         decrementButton.setContentHuggingPriority(.required, for: .horizontal)
         incrementButton.setContentHuggingPriority(.required, for: .horizontal)

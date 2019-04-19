@@ -8,24 +8,15 @@
 
 import UIKit
 
-public class ExtraDetailView: UIView {
+public class ExtraDetailView: EView {
     
     public lazy var titleLabel = ELabel()
     public lazy var subtitleLabel = ELabel()
     public lazy var extraDetailLabel = ELabel()
     private lazy var mainSV = UIStackView()
     
-    public override init(frame: CGRect) {
-        super.init(frame: frame)
-        commonInit()
-    }
-    
-    public required init?(coder aDecoder: NSCoder) {
-        super.init(coder: aDecoder)
-        commonInit()
-    }
-    
-    private func commonInit() {
+    public override func commonInit() {
+
         titleLabel.textStyle = TextStyles.title3
         subtitleLabel.textStyle = TextStyles.small
         

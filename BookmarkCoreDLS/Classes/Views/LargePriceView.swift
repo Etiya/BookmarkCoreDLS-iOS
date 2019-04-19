@@ -8,7 +8,7 @@
 
 import UIKit
 
-public class LargePriceView: UIView {
+public class LargePriceView: EView {
     
     public override var intrinsicContentSize: CGSize {
         return CGSize(width: UIView.noIntrinsicMetric, height: 80)
@@ -28,17 +28,7 @@ public class LargePriceView: UIView {
         }
     }
     
-    public override init(frame: CGRect) {
-        super.init(frame: frame)
-        self.initialize()
-    }
-    
-    required public init?(coder aDecoder: NSCoder) {
-        super.init(coder: aDecoder)
-        self.initialize()
-    }
-    
-    func initialize() {
+    public override func commonInit() {
         largePriceLabel.textStyle?.color = Colors.fBlue
         layoutMargins = UIEdgeInsets(top: Spacing.small, left: Spacing.small, bottom: Spacing.small, right: Spacing.small)
         let containerView = UIView()
