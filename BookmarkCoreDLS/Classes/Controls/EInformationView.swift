@@ -38,7 +38,6 @@ public class EInformationView: EView {
     
     public override func draw(_ rect: CGRect) {
         super.draw(rect)
-        
         setupUI()
     }
     
