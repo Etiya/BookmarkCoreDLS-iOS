@@ -9,7 +9,7 @@ import UIKit
 
 public extension UIImage {
     
-    public static func dlsImageFor(name: String) -> UIImage? {
+    static func dlsImageFor(name: String) -> UIImage? {
         
         let bundle = Bundle(for: Dummy.self)
         
