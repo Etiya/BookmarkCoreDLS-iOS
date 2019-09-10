@@ -89,7 +89,7 @@ public class AmountSelectionView: UIScrollView {
     }
     
     @objc private func handleAmountTap(sender: EButton) {
-        guard let index = stackView.arrangedSubviews.index(of: sender) else { return }
+        guard let index = stackView.arrangedSubviews.firstIndex(of: sender) else { return }
         guard index != selectedIndex else { return }
         if let selectedIndex = selectedIndex {
             (stackView.arrangedSubviews[selectedIndex] as! EButton).isSelected = false
