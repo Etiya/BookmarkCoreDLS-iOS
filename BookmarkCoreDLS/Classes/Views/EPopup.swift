@@ -177,11 +177,28 @@ public class EPopup: UIView {
 extension EPopup {
     
     public func show() {
+        
         UIApplication.shared.keyWindow?.addSubview(self)
         
         self.snp.makeConstraints {
             $0.edges.equalToSuperview()
         }
+        
+        self.mainContainer.alpha = 0.0
+        self.mainContainer.transform = CGAffineTransform(scaleX: 0.3, y: 0.3)
+        
+        UIView.animate(
+            withDuration: 0.4,
+            delay: 0,
+            usingSpringWithDamping: 0.5,
+            initialSpringVelocity: 0,
+            options: .curveEaseIn,
+            animations: {
+                self.mainContainer.alpha = 1.0
+                self.mainContainer.transform = .identity
+        },
+            completion: nil
+        )
         
     }
     
